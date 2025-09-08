@@ -26,10 +26,17 @@ int main(int argc, char *argv[]) {
   // printf("%d\n", x);
   // printf("%d\n", y);
 
-  int x = 4, y = 6;
+  // int x = 4, y = 6;
+  //
+  // swap(&x, &y);
+  // printf("x value: %d\n", x);
+  // printf("y value: %d\n", y);
 
-  swap(&x, &y);
-  printf("x value: %d\n", x);
-  printf("y value: %d\n", y);
+  int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+  int *pa = &a[0];
+
+  printf("%d\n", *pa);// This equal to a[0] = 1
+  printf("%d\n", *pa+4); // This equal to a[0+4] where is a[4] = 5
+
   return 0;
 }
